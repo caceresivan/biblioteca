@@ -248,7 +248,7 @@ static int isEmail(char* pBuffer)
     int flagArroba=0;
     int flagPunto=0;
 
-    if(pBuffer 1= NULL)
+    if(pBuffer != NULL)
     {
         for(i=0;i<strlen(pBuffer);i++)
         {
@@ -256,8 +256,8 @@ static int isEmail(char* pBuffer)
             {
                 break;
             }
-            if(pBuffer[i] != 45 && pBuffer[i] != 46 && pBuffer != 95 && (pBuffer[i]<65 && pBuffer[i]>)90
-                && (pBuffer[i]<48 && pBuffer[i]>57) && pBuffer[i]<97 && pBuffer[i]>122)
+            if(pBuffer[i] != 45 && pBuffer[i] != 46 && pBuffer[i] != 95 && (pBuffer[i]<65 && pBuffer[i]>90)
+                && (pBuffer[i]<48 && pBuffer[i]>57) && (pBuffer[i]<97 && pBuffer[i]>122))
                {
                 break;
                }
